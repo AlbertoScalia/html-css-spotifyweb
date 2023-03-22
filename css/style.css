@@ -5,3 +5,100 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*****************************************************************/
+/**************************** General ****************************/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*****************************************************************/
+/**************************** Flexbox ****************************/
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-flow: column;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-end {
+    justify-content: flex-end;
+}
+
+.j-space-b {
+    justify-content: space-between;
+}
+
+.a-center {
+    align-items: center;
+    align-content: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+
+/*****************************************************************/
+/****************************** Font *****************************/
+
+.bold {
+    font-weight: 700;
+}
+
+.t-center {
+    text-align: center;
+}
+
+/*****************************************************************/
+/*************************** Font size ****************************/
+
+.size-07 {
+    font-size: 0.7rem;
+}
+
+.size-08 {
+    font-size: 0.8rem;
+}
+
+
+/*****************************************************************/
+/**************************** colors *****************************/
+
+.t-white {
+    color: #ffffff;
+}
+
+.t-grey-l {
+    color: #a3a3a3
+}
+
+.back-grey-d {
+    background-color: #282828;
+}
+
+
+/*****************************************************************/
+/************************** Structure ****************************/
+
+#wrapp {
+    width: 100%;
+    height: 100vh;
+}
+
+#bar {
+    width: 100%;
+    height: 90px;
+}
+
+#info-music img {
+    width: 50px;
+}
