@@ -85,6 +85,14 @@ body {
     background-color: #282828;
 }
 
+.back-black {
+    background-color: #000000;
+}
+
+.back-blue-d {
+    background-color: #141922;
+}
+
 
 /*****************************************************************/
 /************************** Structure ****************************/
@@ -101,4 +109,52 @@ body {
 
 #info-music img {
     width: 50px;
+}
+
+#menu-p {
+    width: 230px;
+    height: calc(100vh - 90px);
+    padding: 1.2rem 1rem 0 1rem;
+}
+
+#nav-sup {
+    height: calc(100% - 100px);
+    min-height: 350px;
+}
+
+#nav-inf {
+    width: 100%;
+    height: 100px;
+    margin-top: 1rem;
+}
+
+#content-p {
+    width: calc(100% - 230px);
+    height: 100%;
+}
+
+#section-p {
+    width: 100%;
+    margin-top: 85px;
+    padding: 1.4rem;
+}
+
+#upgrade {
+    width: calc(100% - 230px);
+    height: 85px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#section-p {
+    width: 100%;
+    margin-top: 85px;
+}
+
+#recently,
+#created,
+#popular {
+    width: 100%;
 }
