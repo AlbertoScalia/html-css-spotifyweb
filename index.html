@@ -15,40 +15,73 @@
     <div id="wrapp" class="overflow-hidden">
         <idv class="flex" class="overflow-hidden">
 
-            <!--Nav laterale-->
             <header>
+
+                 <!--Header laterale-->
                 <nav id="menu-p" class="t-grey-l back-black">
 
                     <!--Nav laterale superiore-->
                     <div id="nav-sup" class="flex column">
-                        <div>
-
+                        <div class="logo">
+                            <img src="./img/logo.svg" alt="Logo">
                         </div>
 
-                        <div>
-
+                        <div id="menu-options" class="flex column a-center">
+                            <a href="#" class="flex a-center">
+                                <img src="./img/home.svg" alt="Home icon">
+                                <p class="t-grey-l size-08 semibold ">Home</p>
+                            </a>
+                            <a href="#" class="flex a-center">
+                                <img src="./img/search.svg" alt="Search icon">
+                                <p class="t-grey-l size-08 semibold ">Cerca</p>
+                            </a>
+                            <a href="#" class="flex a-center">
+                                <img src="./img/libreria.svg" alt="Library icon">
+                                <p class="t-grey-l size-08 semibold">La tua libreria</p>
+                            </a>
                         </div>
 
-                        <div>
-
+                        <div id="playlists" class="overflow-hidden">
+                            <h3 class="t-white bold size-09">PLAYLIST</h3>
+                            <a href="#" class="flex a-center" selected>
+                                <i class="fa-solid fa-square-plus size-2-8 t-grey-l"></i>
+                                <p class="t-grey-l size-09 semibold ">Crea playlist</p>
+                            </a>
+                            <div id="list-playlists" class="flex column a-center gap-05 overflow-y-auto">
+                                <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
+                                <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
+                                <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
+                                <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
+                                <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
+                                <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
+                                <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
+                            </div>
                         </div>
-
                     </div>
 
                     <!--Nav laterale inferiore-->
                     <div id="nav-inf" class="flex column">
-
+                        <a href="#" class="flex a-center">
+                            <img src="./img/download.svg" alt="Download icon">
+                            <p class="t-grey-l size-08 semibold">Installa app</p>
+                        </a>
+                        <hr class="t-grey-l">
+                        <a href="#" class="flex a-center ">
+                            <img src="./img/profile.svg" alt="Download icon" class="back-grey-l bord-15">
+                            <p class="t-white size-09 semibold">John Doe</p>
+                        </a>
                     </div>
                 </nav>
+
+                 <!--Header superiore-->
+                <div id="upgrade" class="flex a-center j-end back-black overflow-hidden">
+                    <a href="#" class="button t-white semibold bord-20 size-08">EFFETTUA L'UPGRADE</a>
+                </div>
             </header>
 
             
             <!--Main content-->
-            <main id="content-p" class="flex a-center j-end back-blue-d">
-
-                <!--Sezione upgrade-->
-                <section id="upgrade" class="flex a-center j-end back-black overflow-hidden">
-                </section>
+            <main id="content-p" class="flex a-center j-end back-blue-d overflow-y-auto">
 
                 <!--Sezione con album-->
                 <section id="section-p">

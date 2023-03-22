@@ -22,6 +22,10 @@ body {
     overflow: hidden;
 }
 
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
 
 /*****************************************************************/
 /**************************** Flexbox ****************************/
@@ -79,6 +83,10 @@ body {
 /*****************************************************************/
 /****************************** Font *****************************/
 
+.semibold {
+    font-weight: 600;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -110,6 +118,10 @@ body {
     color: #a3a3a3
 }
 
+.back-grey-l {
+    background-color: #a3a3a3
+}
+
 .back-grey-d {
     background-color: #282828;
 }
@@ -120,6 +132,25 @@ body {
 
 .back-blue-d {
     background-color: #141922;
+}
+
+
+/*****************************************************************/
+/************************* Border radius *************************/
+
+.bord-20 {
+    border-radius: 20px;
+}
+
+
+/*****************************************************************/
+/**************************** Buttons ****************************/
+
+.button {
+    transition: all 0.1s linear;
+    padding: 0.8rem 3rem;
+    margin-right: 1.5rem;
+    border: 1px solid #ffffff;
 }
 
 
@@ -144,6 +175,11 @@ a {
     height: 100vh;
 }
 
+
+
+/*****************************************************************/
+/**************************** Footer *****************************/
+
 #bar {
     width: 100%;
     height: 90px;
@@ -152,6 +188,10 @@ a {
 #info-music img {
     width: 50px;
 }
+
+
+/*****************************************************************/
+/**************************** Header *****************************/
 
 #menu-p {
     width: 230px;
@@ -164,11 +204,60 @@ a {
     min-height: 350px;
 }
 
+.logo img:first-child {
+    width: 65%;
+}
+
+#menu-options a {
+    width: 100%;
+}
+
+#menu-options a img {
+    width: 28px;
+}
+
+#playlists #list-playlists {
+    width: 100%;
+    max-height: 80%;
+}
+
+#playlists a {
+    width: 100%;
+}
+
 #nav-inf {
     width: 100%;
     height: 100px;
     margin-top: 1rem;
 }
+
+#nav-inf a:first-child img {
+    width: 18px;
+}
+
+#nav-inf a:last-child img {
+    width: 20px;
+    height: 20px;
+}
+
+
+#upgrade {
+    width: calc(100% - 230px);
+    height: 85px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 0.5;
+}
+
+#upgrade a {
+    opacity: 1;
+}
+
+
+/*****************************************************************/
+/***************************** Main ******************************/
 
 #content-p {
     width: calc(100% - 230px);
@@ -179,15 +268,6 @@ a {
     width: 100%;
     margin-top: 85px;
     padding: 1.4rem;
-}
-
-#upgrade {
-    width: calc(100% - 230px);
-    height: 85px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
 }
 
 #section-p {
