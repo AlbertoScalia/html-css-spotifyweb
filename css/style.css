@@ -470,22 +470,32 @@ input[type="range"].course:hover::-webkit-slider-thumb {
 /*****************************************************************/
 /************************* Media Queries *************************/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-height: 170px) {
+
+    #content-p,
+    #nav-p {
+        display: none;
+    }
+
+    main {
+        height: 0;
+    }
+
+    #bar {
+        height: 100vh;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
 
     .items-container .item {
         width: calc(100% / 4 - 1rem);
     }
 
-    #bar-options {
-        display: none;
-    }
-
     .items-container {
         row-gap: 0;
-    }
-
-    #bar-status {
-        width: 80%;
     }
 
     #bar-status div:last-child {
@@ -493,23 +503,51 @@ input[type="range"].course:hover::-webkit-slider-thumb {
     }
 
     #bar-status div:last-child input {
-        width: 80%;
+        width: 100%;
     }
 
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 878px) {
+
+    .items-container .item {
+        width: calc(100% / 4 - 1rem);
+    }
+
+    .items-container {
+        row-gap: 0;
+    }
+
+    #bar-status {
+        width: 100%;
+    }
+
+    #bar-status div:last-child input {
+        width: 50%;
+    }
+
+    #bar-options .course{
+        max-width: 50px;
+    }
+
+    #folder {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 768) {
 
     .items-container .item {
         width: calc(100% / 2 - 1rem);
     }
 
-    #info-music {
-        display: none;
-    }
+}
 
-    #bar-status {
-        width: 100%;
+@media screen and (max-width: 639px) {
+
+    .items-container .item {
+        width: calc(100% / 2 - 1rem);
     }
 
     #bar {
@@ -518,7 +556,8 @@ input[type="range"].course:hover::-webkit-slider-thumb {
 
 }
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 552px) {
     
     #nav-p{
         width: 50px;
@@ -561,4 +600,81 @@ input[type="range"].course:hover::-webkit-slider-thumb {
     #nav-inf {
         align-items: center;
     }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #bar-status {
+        width: 100%;
+    }
+
+    #bar-options, #info-music{
+        display: none;
+    }
+    
+    #nav-p{
+        width: 50px;
+    }
+    
+    main #content-p, #upgrade {
+        width: calc(100% - 50px);
+    }
+
+    main #nav-p {
+        padding: 0.35rem 0.65rem 0 0.65rem;
+    }
+
+    .logo img:nth-child(1) {
+        display: none;
+    }
+
+    .logo img:nth-child(2) {
+        display: block;
+        width: 25px;
+    }
+
+    #menu-options p,
+    #menu-options span {
+        display: none;
+    }
+
+    #playlists {
+        display: none;
+    }
+
+    #nav-inf p {
+        display: none;
+    }
+
+    #nav-inf hr {
+        opacity: 0;
+    }
+
+    #nav-inf {
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 321px) {
+
+    .items-container .item{
+        width: 100%;
+    }
+
+    #upgrade a {
+        border-radius: 40px;
+        padding: 0.6rem 1rem;
+    }
+
+}
+
+@media screen and (max-width: 552px) and (max-height: 170px) {
+
+    #bar {
+        height: 100vh;
+        flex-flow: column;
+    }
+
 }
