@@ -278,6 +278,10 @@ a {
     width: 65%;
 }
 
+.logo img:nth-child(2) {
+    display: none;
+}
+
 #menu-options a {
     width: 100%;
 }
@@ -460,4 +464,101 @@ input[type="range"].course:hover::-webkit-slider-thumb {
 
 #play:hover {
     scale: 1.2;
+}
+
+
+/*****************************************************************/
+/************************* Media Queries *************************/
+
+@media screen and (max-width: 900px) {
+
+    .items-container .item {
+        width: calc(100% / 4 - 1rem);
+    }
+
+    #bar-options {
+        display: none;
+    }
+
+    .items-container {
+        row-gap: 0;
+    }
+
+    #bar-status {
+        width: 80%;
+    }
+
+    #bar-status div:last-child {
+        width: 100%;
+    }
+
+    #bar-status div:last-child input {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+
+    .items-container .item {
+        width: calc(100% / 2 - 1rem);
+    }
+
+    #info-music {
+        display: none;
+    }
+
+    #bar-status {
+        width: 100%;
+    }
+
+    #bar {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    
+    #nav-p{
+        width: 50px;
+    }
+    
+    main #content-p, #upgrade {
+        width: calc(100% - 50px);
+    }
+
+    main #nav-p {
+        padding: 0.35rem 0.65rem 0 0.65rem;
+    }
+
+    .logo img:nth-child(1) {
+        display: none;
+    }
+
+    .logo img:nth-child(2) {
+        display: block;
+        width: 25px;
+    }
+
+    #menu-options p,
+    #menu-options span {
+        display: none;
+    }
+
+    #playlists {
+        display: none;
+    }
+
+    #nav-inf p {
+        display: none;
+    }
+
+    #nav-inf hr {
+        opacity: 0;
+    }
+
+    #nav-inf {
+        align-items: center;
+    }
 }
