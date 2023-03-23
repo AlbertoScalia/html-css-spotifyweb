@@ -27,6 +27,22 @@ body {
 
 
 /*****************************************************************/
+/**************************** scrollbar **************************/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.215);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.329);
+    border-radius: 10px;
+}
+
+/*****************************************************************/
 /**************************** Flexbox ****************************/
 
 .flex {
@@ -101,12 +117,32 @@ body {
 /*****************************************************************/
 /*************************** Font size ****************************/
 
+.size-06 {
+    font-size: 0.6rem;
+}
+
 .size-07 {
     font-size: 0.7rem;
 }
 
 .size-08 {
     font-size: 0.8rem;
+}
+
+.size-09 {
+    font-size: 0.95rem;
+}
+
+.size-1 {
+    font-size: 1rem;
+}
+
+.size-1-6 {
+    font-size: 1.6rem;
+}
+
+.size-2-8 {
+    font-size: 2.8rem;
 }
 
 
@@ -117,6 +153,10 @@ body {
     padding: 0.25rem 0;
 }
 
+.pad-03-l {
+    padding-left: 0.3rem;
+}
+
 .pad-06 {
     padding: 0.6rem 0;
 }
@@ -124,6 +164,15 @@ body {
 .pad-06-2 {
     padding: 0.6rem;
 }
+
+.pad-06-l {
+    padding-left: 0.6rem;
+}
+
+.pad-06-t {
+    padding-top: 0.6rem;
+}
+
 
 
 /*****************************************************************/
@@ -161,6 +210,10 @@ body {
     border-radius: 20px;
 }
 
+.bord-50 {
+    border-radius: 50%;
+}
+
 
 /*****************************************************************/
 /**************************** Buttons ****************************/
@@ -170,6 +223,12 @@ body {
     padding: 0.8rem 3rem;
     margin-right: 1.5rem;
     border: 1px solid #ffffff;
+}
+
+.button:hover {
+    font-size: 0.9rem;
+    border-radius: 30px;
+    padding: 0.9rem 3.1rem;
 }
 
 
@@ -204,7 +263,7 @@ a {
 /**************************** Nav *****************************/
 
 
-#menu-p {
+#nav-p {
     width: 230px;
     height: calc(100vh - 90px);
     padding: 1.2rem 1rem 0 1rem;
@@ -230,6 +289,12 @@ a {
 #playlists #list-playlists {
     width: 100%;
     max-height: 80%;
+}
+
+#nav-p a:hover,
+#nav-p a:hover p,
+#nav-p a:hover i {
+    color: #ffffff;
 }
 
 #playlists a {
@@ -276,6 +341,16 @@ a {
     background-color: #0000006a;
 }
 
+#menu a span:hover {
+    color: #ffffff;
+}
+
+.sub-line {
+    width: 40%;
+    margin-top: 3px;
+    border: 1px solid #adff2f;
+}
+
 #recently,
 #created,
 #popular {
@@ -297,6 +372,29 @@ a {
     width: 100%;
 }
 
+.item .cover {
+    position: relative;
+}
+
+.item .cover i {
+    display: none;
+}
+
+.item:hover .cover i {
+    display: block;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    color: white;
+}
+
+.item:hover .cover img {
+    filter: brightness(.5);
+}
+
 
 /*****************************************************************/
 /**************************** Footer *****************************/
@@ -308,4 +406,58 @@ a {
 
 #info-music img {
     width: 50px;
+}
+
+#bar-options {
+    max-width: 250px;
+}
+
+#bar-status {
+    width: 60%;
+    max-width: 500px;
+    margin-top: -0.5rem;
+}
+
+#bar-status .course {
+    width: 400px;
+}
+
+input[type="range"].course {
+    -webkit-appearance: none;
+    height: 5px;
+    background: #5a5a5a;
+    border-radius: 5px;
+}
+
+input[type="range"].course:hover {
+    cursor: pointer;
+}
+
+input[type="range"].course::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    cursor: ew-resize;
+    transition: .3s ease-in-out;
+    visibility: hidden;
+}
+
+input[type="range"].course:hover::-webkit-slider-thumb {
+    visibility: visible;
+}
+
+#bar i {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+#bar i:hover,
+#bar a:hover {
+    color: #ffffff;
+}
+
+#play:hover {
+    scale: 1.2;
 }
