@@ -13,20 +13,21 @@
 </head>
 <body>
     <div id="wrapp" class="overflow-hidden">
-        <idv class="flex" class="overflow-hidden">
 
-            <header>
+        <!--Main-->
+        <main>
+            <div id="container-p" class="flex overflow-hidden">
 
-                 <!--Header laterale-->
+                <!--Navbar laterale-->
                 <nav id="menu-p" class="t-grey-l back-black">
-
+    
                     <!--Nav laterale superiore-->
-                    <div id="nav-sup" class="flex column">
+                     <div id="nav-sup" class="flex column">
                         <div class="logo">
                             <img src="./img/logo.svg" alt="Logo">
-                        </div>
-
-                        <div id="menu-options" class="flex column a-center">
+                            </div>
+    
+                        <div id="menu-options" class="flex column a-center pad-06">
                             <a href="#" class="flex a-center">
                                 <img src="./img/home.svg" alt="Home icon">
                                 <p class="t-grey-l size-08 semibold ">Home</p>
@@ -37,16 +38,16 @@
                             </a>
                             <a href="#" class="flex a-center">
                                 <img src="./img/libreria.svg" alt="Library icon">
-                                <p class="t-grey-l size-08 semibold">La tua libreria</p>
+                                 <p class="t-grey-l size-08 semibold">La tua libreria</p>
                             </a>
                         </div>
-
-                        <div id="playlists" class="overflow-hidden">
+    
+                         <div id="playlists" class="overflow-hidden">
                             <h3 class="t-white bold size-09">PLAYLIST</h3>
-                            <a href="#" class="flex a-center" selected>
+                            <a href="#" class="flex a-center pad-06" selected>
                                 <i class="fa-solid fa-square-plus size-2-8 t-grey-l"></i>
                                 <p class="t-grey-l size-09 semibold ">Crea playlist</p>
-                            </a>
+                             </a>
                             <div id="list-playlists" class="flex column a-center gap-05 overflow-y-auto">
                                 <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
                                 <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
@@ -55,232 +56,212 @@
                                 <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
                                 <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
                                 <a href="#" class="t-grey-l size-08 semibold">Nome Playlist</a>
-                            </div>
+                             </div>
                         </div>
                     </div>
-
+    
                     <!--Nav laterale inferiore-->
                     <div id="nav-inf" class="flex column">
-                        <a href="#" class="flex a-center">
+                        <a href="#" class="flex a-center pad-06">
                             <img src="./img/download.svg" alt="Download icon">
                             <p class="t-grey-l size-08 semibold">Installa app</p>
                         </a>
                         <hr class="t-grey-l">
-                        <a href="#" class="flex a-center ">
+                        <a href="#" class="flex a-center pad-06">
                             <img src="./img/profile.svg" alt="Download icon" class="back-grey-l bord-15">
                             <p class="t-white size-09 semibold">John Doe</p>
-                        </a>
+                         </a>
                     </div>
                 </nav>
-
-                 <!--Header superiore-->
-                <div id="upgrade" class="flex a-center j-end back-black overflow-hidden">
-                    <a href="#" class="button t-white semibold bord-20 size-08">EFFETTUA L'UPGRADE</a>
-                </div>
-            </header>
-
-            
-            <!--Main content-->
-            <main id="content-p" class="flex a-center j-end back-blue-d overflow-y-auto">
-
-                <!--Sezione con album-->
-                <section id="section-p">
-
-                    <!--Menu-->
-                    <div id="menu" class="flex wrap j-center">
-                        <a href="#" class="flex column a-center">
-                            <span>
-                                IN EVIDENZA
-                            </span>
-                        </a>
-                        <a href="#" class="flex column a-center">
-                            <span>
-                                CLASSIFICHE
-                            </span>
-                        </a>
-                        <a href="#" class="flex column a-center">
-                            <span>
-                                GENERI E MOOD
-                            </span>
-                        </a>
-                        <a href="#" class="flex column a-center">
-                            <span>
-                                NUOVE USCITE
-                            </span>
-                        </a>
-                        <a href="#" class="flex column a-center">
-                            <span>
-                                SCOPRI
-                            </span>
-                        </a>
-                    </div>
-
-                    <!--Ascoltato di recente-->
-                    <div id="recently">
-                        <h2 class="t-white">
-                            Ascoltate di recente
-                        </h2>
-                        <div class="flex wrap items-container gap-1">
-                            <div class="flex wrap column a-center item">
-                                <div class="cover">
-                                    <img src="./img/metal_lifting.jpg" alt="Heavy metal">
-                                </div>
-                                <h3 class="t-white size-09">
-                                    Heavy Metal
-                                </h3>
-                                <p class="bold size-07">
-                                    Subtitle
-                                </p>
-
-                            </div>
-                            <div class="flex wrap column a-center item">
-                                <div class="cover">
-                                    <img src="./img/metal_lifting.jpg" alt="Heavy metal">
-                                </div>
-                                <h3 class="t-white size-09">
-                                    Heavy Metal
-                                </h3>
-                                <p class="bold size-07">
-                                    Subtitle
-                                </p>
-
-                            </div>
-                            <div class="flex wrap column a-center item">
-                                <div class="cover">
-                                    <img src="./img/metal_lifting.jpg" alt="Heavy metal">
-                                </div>
-                                <h3 class="t-white size-09">
-                                    Heavy Metal
-                                </h3>
-                                <p class="bold size-07">
-                                    Subtitle
-                                </p>
-
-                            </div>
-                            <div class="flex wrap column a-center item">
-                                <div class="cover">
-                                    <img src="./img/metal_lifting.jpg" alt="Heavy metal">
-                                </div>
-                                <h3 class="t-white size-09">
-                                    Heavy Metal
-                                </h3>
-                                <p class="bold size-07">
-                                    Subtitle
-                                </p>
-
-                            </div>
-                            <div class="flex wrap column a-center item">
-                                <div class="cover">
-                                    <img src="./img/metal_lifting.jpg" alt="Heavy metal">
-                                </div>
-                                <h3 class="t-white size-09">
-                                    Heavy Metal
-                                </h3>
-                                <p class="bold size-07">
-                                    Subtitle
-                                </p>
-
-                            </div>
-                            <div class="flex wrap column a-center item">
-                                <div class="cover">
-                                    <img src="./img/metal_lifting.jpg" alt="Heavy metal">
-                                </div>
-                                <h3 class="t-white size-09">
-                                    Heavy Metal
-                                </h3>
-                                <p class="bold size-07">
-                                    Subtitle
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Creato per-->
-                    <div id="created">
-                        <h2 class="t-white">
-                            Creato per John Doe
-                        </h2>
-                        <p class="size-08">
-                            Più ascolti, più accurati saranno i suggerimenti.
-                        </p>
-                        <div class="flex wrap items-container gap-1">
-                            <div class="flex wrap column a-center item">
-                                <div class="cover">
-                                    <img src="./img/metal_lifting.jpg" alt="Heavy metal">
-                                </div>
-                                <h3 class="t-white size-09">
-                                    Heavy Metal
-                                </h3>
-                                <p class="bold size-07">
-                                    Subtitle
-                                </p>
-
-                            </div>
-                            <div class="flex wrap column a-center item">
-                                <div class="cover">
-                                    <img src="./img/metal_lifting.jpg" alt="Heavy metal">
-                                </div>
-                                <h3 class="t-white size-09">
-                                    Heavy Metal
-                                </h3>
-                                <p class="bold size-07">
-                                    Subtitle
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Artisti popolari-->
-                    <div id="popular">
-                        <h2 class="t-white">
-                            Artisti più popolari
-                        </h2>
-                        <p class="size-08">
-                            Più ascolti, più accurati saranno i suggerimenti.
-                        </p>
-                        <div class="flex wrap items-container gap-1">
-                            <div class="flex wrap column a-center item">
-                                <div class="cover">
-                                    <img src="./img/metal_lifting.jpg" alt="Heavy metal">
-                                </div>
-                                <h3 class="t-white size-09">
-                                    Heavy Metal
-                                </h3>
-                                <p class="bold size-07">
-                                    Subtitle
-                                </p>
-
-                            </div>
-                            <div class="flex wrap column a-center item">
-                                <div class="cover">
-                                    <img src="./img/metal_lifting.jpg" alt="Heavy metal">
-                                </div>
-                                <h3 class="t-white size-09">
-                                    Heavy Metal
-                                </h3>
-                                <p class="bold size-07">
-                                    Subtitle
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-            </main>
-
-        </div>
     
+                <!--Main content-->
+                <div id="content-p" class=" back-blue-d overflow-y-auto">
+    
+                    <!--Upgrade-->
+                    <div id="upgrade" class="flex a-center j-end overflow-hidden">
+                        <a href="#" class="button t-white semibold bord-20 size-08">EFFETTUA L'UPGRADE</a>
+                    </div>
+    
+                    <!--Sezione con album-->
+                    <section id="section-p">
+    
+                        <!--Menu-->
+                        <div id="menu" class="flex wrap j-center">
+                            <a href="#" class="flex column a-center">
+                                <span>
+                                    IN EVIDENZA
+                                </span>
+                            </a>
+                            <a href="#" class="flex column a-center">
+                                <span>
+                                    CLASSIFICHE
+                                </span>
+                            </a>
+                            <a href="#" class="flex column a-center">
+                                <span>
+                                    GENERI E MOOD
+                                </span>
+                            </a>
+                            <a href="#" class="flex column a-center">
+                                <span>
+                                    NUOVE USCITE
+                                </span>
+                            </a>
+                            <a href="#" class="flex column a-center">
+                                <span>
+                                    SCOPRI
+                                </span>
+                            </a>
+                        </div>
+    
+                        <!--Ascoltato di recente-->
+                        <div id="recently">
+                            <h2 class="t-white">
+                                Ascoltate di recente
+                            </h2>
+                            <div class="flex wrap items-container gap-1">
+                                <div class="flex wrap column a-center item">
+                                    <div class="cover">
+                                        <img src="./img/metal_lifting.jpg" alt="Heavy metal">
+                                    </div>
+                                    <h3 class="t-white size-09">
+                                        Heavy Metal
+                                    </h3>
+                                    <p class="bold size-07">
+                                        Subtitle
+                                    </p>
+                                </div>
+                                <div class="flex wrap column a-center item">
+                                    <div class="cover">
+                                        <img src="./img/stranger.jpeg" alt="Stranger Things">
+                                    </div>
+                                    <h3 class="t-white size-09">
+                                        Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
+                                    </h3>
+                                    <p class="bold size-07">
+                                        Kyle Dixon & Michael Stein
+                                    </p>
+                                </div>
+                                <div class="flex wrap column a-center item">
+                                    <div class="cover">
+                                        <img src="./img/aquietplace.jpeg" alt="A quiet place">
+                                    </div>
+                                    <h3 class="t-white size-09">
+                                        A quiet place
+                                    </h3>
+                                    <p class="bold size-07">
+                                        Subtitle
+                                    </p>
+                                </div>
+                                <div class="flex wrap column a-center item">
+                                    <div class="cover">
+                                        <img src="./img/split.jpeg" alt="Split">
+                                    </div>
+                                    <h3 class="t-white size-09">
+                                        Split
+                                    </h3>
+                                    <p class="bold size-07">
+                                        Subtitle
+                                    </p>
+                                </div>
+                                <div class="flex wrap column a-center item">
+                                    <div class="cover">
+                                        <img src="./img/cure.jpeg" alt="A cure for wellness">
+                                    </div>
+                                    <h3 class="t-white size-09">
+                                        A cure for wellness
+                                    </h3>
+                                    <p class="bold size-07">
+                                        Subtitle
+                                    </p>
+                                </div>
+                                <div class="flex wrap column a-center item">
+                                    <div class="cover">
+                                        <img src="./img/sinister.jpeg" alt="Sinister">
+                                    </div>
+                                    <h3 class="t-white size-09">
+                                        Sinister
+                                    </h3>
+                                    <p class="bold size-07">
+                                        Subtitle
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--Creato per-->
+                        <div id="created">
+                            <h2 class="t-white">
+                                Creato per John Doe
+                            </h2>
+                            <p class="size-08">
+                                Più ascolti, più accurati saranno i suggerimenti.
+                            </p>
+                            <div class="flex wrap items-container gap-1">
+                                <div class="flex wrap column a-center item">
+                                    <div class="cover">
+                                        <img src="./img/radar.jpeg" alt="Release radar">
+                                    </div>
+                                    <h3 class="t-white size-09">
+                                        Release radar
+                                    </h3>
+                                </div>
+                                <div class="flex wrap column a-center item">
+                                    <div class="cover">
+                                        <img src="./img/mixdaily.jpeg" alt="Daily Mix 1">
+                                    </div>
+                                    <h3 class="t-white size-09">
+                                        Daily Mix 1
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--Artisti popolari-->
+                        <div id="popular">
+                            <h2 class="t-white">
+                                Artisti più popolari
+                            </h2>
+                            <p class="size-08">
+                                Più ascolti, più accurati saranno i suggerimenti.
+                            </p>
+                            <div class="flex wrap items-container gap-1">
+                                <div class="flex wrap column a-center item">
+                                    <div class="cover">
+                                        <img src="./img/youg.jpeg" alt="Lana del Rey">
+                                    </div>
+                                    <h3 class="t-white size-09">
+                                        Lana del Rey
+                                    </h3>
+                                </div>
+                                <div class="flex wrap column a-center item">
+                                    <div class="cover">
+                                        <img src="./img/einaudi.jpeg" alt="Ludovico Einaudi">
+                                    </div>
+                                    <h3 class="t-white size-09">
+                                        Ludovico Einaudi
+                                    </h3>
+                                    <p class="bold size-07">
+                                        Subtitle
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+    
+                </div>
+            </div>
+        </main>
+
         <!--Footer-->    
-        <footer id="bar" class="flex j-space-b a-center t-white back-grey-d">
+        <footer id="bar" class="flex j-space-b a-center t-white back-grey-d pad-06-2">
 
             <!--Sezione sinistra-->
             <section id="info-music">
                 <div class="flex j-space-b a-center">
                     <div class="flex a-center t-center">
                         <img src="./img/sinister.jpeg" alt="sinister cover">
-                        <div class="flex column">
+                        <div class="flex column p">
                             <h3 class="size-08 t-white">
                                 Sinister
                             </h3>
@@ -309,7 +290,7 @@
             </section>
 
         </footer>
-</div>
+    </div>
 
 
 </body>
