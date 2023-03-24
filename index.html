@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>html-css-spotifyweb</title>
 </head>
+
 <body>
     <div id="wrapp" class="overflow-hidden">
 
@@ -20,14 +22,13 @@
 
                 <!--Navbar laterale-->
                 <nav id="nav-p" class="t-grey-l back-black">
-    
+
                     <!--Nav laterale superiore-->
-                     <div id="nav-sup" class="flex column">
+                    <div id="nav-sup" class="flex column">
                         <div class="logo">
                             <img src="./img/logo.svg" alt="Logo">
                             <img src="./img/logo-small.svg" alt="Logo">
-                            </div>
-    
+                        </div>
                         <div id="menu-options" class="flex column a-center pad-06">
                             <a href="#" class="flex a-center pad-0-25">
                                 <img src="./img/home.svg" alt="Home icon">
@@ -39,16 +40,18 @@
                             </a>
                             <a href="#" class="flex a-center pad-0-25">
                                 <img src="./img/libreria.svg" alt="Library icon">
-                                 <p class="t-grey-l size-07 semibold pad-03-l">La tua libreria</p>
+                                <p class="t-grey-l size-07 semibold pad-03-l">La tua libreria</p>
                             </a>
                         </div>
-    
-                         <div id="playlists" class="overflow-hidden">
+                        <div id="playlists" class="overflow-hidden">
                             <h3 class="t-white bold size-09">PLAYLIST</h3>
-                            <a href="#" class="flex a-center pad-06" selected>
-                                <i class="fa-solid fa-square-plus size-2-8 t-grey-l"></i>
-                                <p class="t-grey-l size-08 semibold pad-06-l">Crea playlist</p>
-                             </a>
+                            <div class="flex a-center pad-06">
+                                <a href=""><i class="fa-solid fa-square-plus size-2-8 t-grey-l"></i>
+                                </a>
+                                <a href="">
+                                    <p class="t-grey-l size-08 semibold pad-06-l">Crea playlist</p>
+                                </a>
+                            </div>
                             <div id="list-playlists" class="flex column a-center gap-05 overflow-y-auto">
                                 <a href="#" class="t-grey-l size-07 semibold pad-06-t">Nome Playlist</a>
                                 <a href="#" class="t-grey-l size-07 semibold pad-06-t">Nome Playlist</a>
@@ -57,10 +60,10 @@
                                 <a href="#" class="t-grey-l size-07 semibold pad-06-t">Nome Playlist</a>
                                 <a href="#" class="t-grey-l size-07 semibold pad-06-t">Nome Playlist</a>
                                 <a href="#" class="t-grey-l size-07 semibold pad-06-t">Nome Playlist</a>
-                             </div>
+                            </div>
                         </div>
                     </div>
-    
+
                     <!--Nav laterale inferiore-->
                     <div id="nav-inf" class="flex column">
                         <a href="#" class="flex a-center pad-06">
@@ -71,21 +74,21 @@
                         <a href="#" class="flex a-center pad-06">
                             <img src="./img/profile.svg" alt="Download icon" class="back-grey-l bord-50">
                             <p class="t-white size-08 bold pad-06-l bord">John Doe</p>
-                         </a>
+                        </a>
                     </div>
                 </nav>
-    
+
                 <!--Main content-->
                 <div id="content-p" class="t-grey-l back-blue-d overflow-y-auto">
-    
+
                     <!--Upgrade-->
                     <div id="upgrade" class="flex a-center j-end overflow-hidden">
                         <a href="#" class="button t-white semibold bord-20 size-08">EFFETTUA L'UPGRADE</a>
                     </div>
-    
+
                     <!--Sezione con album-->
-                    <section id="section-p">
-    
+                    <div id="section-p">
+
                         <!--Menu-->
                         <div id="menu" class="flex wrap j-center gap-r-2">
                             <a href="#" class="flex column a-center">
@@ -93,7 +96,6 @@
                                     IN EVIDENZA
                                 </span>
                                 <span class="sub-line"></span>
-
                             </a>
                             <a href="#" class="flex column a-center">
                                 <span class="t-grey-l size-08 semibold">
@@ -116,11 +118,11 @@
                                 </span>
                             </a>
                         </div>
-    
+
                         <!--Ascoltato di recente-->
                         <div id="recently">
                             <h2 class="t-white">
-                                Ascoltate di recente
+                                Recently played
                             </h2>
                             <div class="flex wrap items-container gap-1">
                                 <div class="flex wrap column a-center item">
@@ -197,7 +199,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!--Creato per-->
                         <div id="created">
                             <h2 class="t-white">
@@ -227,7 +229,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!--Artisti popolari-->
                         <div id="popular">
                             <h2 class="t-white">
@@ -257,17 +259,16 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
-    
+                    </div>
                 </div>
             </div>
         </main>
 
-        <!--Footer-->    
+        <!--Footer-->
         <footer id="bar" class="flex j-space-b a-center t-white back-grey-d pad-06-2">
 
             <!--Sezione sinistra-->
-            <section id="info-music">
+            <div id="info-music">
                 <div class="flex j-space-b a-center">
                     <div class="flex a-center t-center">
                         <img src="./img/sinister.jpeg" alt="sinister cover">
@@ -278,7 +279,6 @@
                             <a href="" class="bold t-grey-l size-07">
                                 Brano Nome
                             </a>
-
                         </div>
                         <div id="folder" class="flex wrap gap-08">
                             <i class="fa-regular fa-heart t-grey-l size-09"></i>
@@ -286,10 +286,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <!--Sezione centrale-->
-            <section id="bar-status" class="flex column a-center">
+            <div id="bar-status" class="flex column a-center">
                 <div class="flex a-center j-center gap-1-5 pad-06-2">
                     <i class="fa-solid fa-shuffle t-grey-l size-1 op-50"></i>
                     <i class="fa-solid fa-backward-step t-grey-l size-1 "></i>
@@ -297,24 +297,38 @@
                     <i class="fa-solid fa-forward-step t-grey-l size-1"></i>
                     <i class="fa-solid fa-arrow-rotate-right  t-grey-l size-1 op-50"></i>
                 </div>
-                <div class="flex a-center j-center gap-1-5">
+                <div id="song-time" class="flex gap-1-5">
                     <p class="size-06">0:25</p>
-                    <input class="course" type="range" min="0" max="100" value="20" step="2">
+                    <div class="bar-button">
+                        <div id="time">
+                            <div id="current-time">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
                     <p class="size-06">4:35</p>
                 </div>
-            </section>
+            </div>
 
             <!--Sezione destra-->
-            <section id="bar-options" class="flex a-center gap-1">
-                <i class="fa-solid fa-list-ul t-grey-l size-09"></i>
-                <i class="fa-solid fa-display t-grey-l size-09"></i>
-                <i class="fa-solid fa-volume-high t-grey-l size-09"></i>
-                <input class="course" type="range" min="0" max="100" value="30" step="5">
-            </section>
+            <div id="bar-options" class="flex a-center gap-1">
+                <div class="flex a-center gap-1">
+                    <i class="fa-solid fa-list-ul t-grey-l size-09"></i>
+                    <i class="fa-solid fa-display t-grey-l size-09"></i>
+                    <i class="fa-solid fa-volume-high t-grey-l size-09"></i>
+                </div>
 
+                <div class="bar-button">
+                    <div id="volume-level">
+                        <div id="volume">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 
-
 </body>
+
 </html>
